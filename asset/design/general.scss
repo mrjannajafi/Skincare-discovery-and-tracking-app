@@ -1,0 +1,137 @@
+$color-bg-cream: rgb(252, 247, 244);
+$color-bg-white: rgb(255, 255, 255);
+$color-primary-blue: rgb(61, 85, 249);
+$color-shadow-lavender: rgb(246, 241, 249);
+$color-bg-soft-blue: rgb(240, 246, 251);
+$color-text-peach: rgb(240, 188, 163);
+$color-text-header: rgb(7, 19, 48);
+$color-text-primary: #6d7485;
+$font-primary: "Gilory";
+$font-secondary: "BC_Novatica";
+$space-s: 1.6rem;
+$space-m: 2.4rem;
+/* ========================================
+   font family
+======================================== */
+
+@font-face {
+  font-family: "Gilory";
+  src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Gilory-Medium";
+  src: url(../fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: "BC_Novatica";
+  src: url(../fonts/fonnts.com-BC_Novatica_CYR_Regular.otf);
+}
+
+@mixin title-style {
+  font-family: var(--font-secondary);
+  color: var(--color-text-header);
+  letter-spacing: 0.15rem;
+}
+
+@mixin button-hover {
+  &:hover {
+    background-color: lighten($color-primary-blue, 5%);
+    transform: scale(1.05);
+  }
+}
+
+/* ========================================
+     font-size:
+     10/12/14/16/18/20/24/30/36/44/52/62/74/86/98 
+======================================== */
+
+/* ========================================
+    whitespace:
+    2/4/8/12/16/24/32/48/64/80/96/128 
+    ======================================== */
+
+/* ========================================
+   text 
+======================================== */
+
+.title--primary {
+  margin: $space-m 0;
+  font-size: 4.4rem;
+  @include title-style();
+}
+
+.title--secondary {
+  font-size: 2rem;
+  @include title-style();
+}
+
+.text {
+  margin: $space-m 0;
+  font-family: $font-primary;
+  color: $color-text-primary;
+  font-size: 1.8rem;
+}
+
+.text--blue {
+  display: block;
+  font-family: "Gilory-Medium";
+  font-weight: 600;
+  color: $color-primary-blue;
+  font-size: 1.6rem;
+  margin: 1.2rem 0;
+}
+
+/* ========================================
+  button 
+======================================== */
+
+.button {
+  color: $color-bg-white;
+  background-color: $color-primary-blue;
+  font-family: "Gilory-Medium";
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  border: none;
+  border-radius: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  @include button-hover();
+}
+
+/* ========================================
+ flex box
+======================================== */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* ========================================
+  grid class
+======================================== */
+.grid {
+  display: grid;
+  align-items: center;
+  gap: $space-m;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--3-rows {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/* ========================================
+  image
+======================================== */
+.image {
+  width: 25rem;
+}

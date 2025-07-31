@@ -1,0 +1,93 @@
+$color-bg-cream: rgb(252, 247, 244);
+$color-bg-white: rgb(255, 255, 255);
+$color-black: #000;
+$color-primary-blue: rgb(61, 85, 249);
+$color-shadow-lavender: rgb(246, 241, 249);
+$color-bg-soft-blue: rgb(240, 246, 251);
+$color-text-peach: rgb(240, 188, 163);
+$color-text-header: rgb(7, 19, 48);
+$color-text-primary: #6d7485;
+$font-primary: "Gilory";
+$font-secondary: "BC_Novatica";
+$font-tertiary: "Gilory-Medium";
+$space-s: 1.6rem;
+$space-m: 2.4rem;
+
+@font-face {
+  font-family: "Gilory";
+  src: url(../fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Gilory-Medium";
+  src: url(../fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: "BC_Novatica";
+  src: url(../fonts/fonnts.com-BC_Novatica_CYR_Regular.otf);
+}
+
+@mixin link-hover {
+  &:hover {
+    color: $color-black;
+  }
+}
+/* ========================================
+     font-size:
+     10/12/14/16/18/20/24/30/36/44/52/62/74/86/98 
+======================================== */
+
+/* ========================================
+    whitespace:
+    2/4/8/12/16/24/32/48/64/80/96/128 
+    ======================================== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  width: 100%;
+  background-color: $color-bg-cream;
+  padding: 1.2rem 12.8rem;
+  z-index: 1000;
+  gap: 3.2rem;
+
+  .header__logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 3rem;
+    }
+
+    .name-site {
+      margin-left: 0.6rem;
+      font-family: $font-tertiary;
+      font-size: 2.6rem;
+      color: $color-black;
+    }
+  }
+
+  .nav__list {
+    display: flex;
+    margin-right: $space-m;
+    align-items: center;
+    gap: $space-m;
+    font-family: $font-tertiary;
+    font-weight: 600;
+margin-left: 12.8rem;
+
+    .nav__link {
+      color: $color-text-primary;
+      font-size: $space-s;
+      transition: all 0.3s ease-in-out;
+      @include link-hover();
+    }
+  }
+
+  .header__button {
+    margin-left: auto; 
+    padding: 1.2rem;
+  }
+}

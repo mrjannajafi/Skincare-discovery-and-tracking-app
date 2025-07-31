@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Gilory";
+  src: url(../fonts/Gilroy-Regular.ttf);
+}
+@font-face {
+  font-family: "Gilory-Medium";
+  src: url(../fonts/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: "BC_Novatica";
+  src: url(../fonts/fonnts.com-BC_Novatica_CYR_Regular.otf);
+}
+/* ========================================
+     font-size:
+     10/12/14/16/18/20/24/30/36/44/52/62/74/86/98 
+======================================== */
+/* ========================================
+    whitespace:
+    2/4/8/12/16/24/32/48/64/80/96/128 
+    ======================================== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(252, 247, 244);
+  padding: 1.2rem 12.8rem;
+  z-index: 1000;
+  gap: 3.2rem;
+}
+.header .header__logo {
+  display: flex;
+  align-items: center;
+}
+.header .header__logo img {
+  width: 3rem;
+}
+.header .header__logo .name-site {
+  margin-left: 0.6rem;
+  font-family: "Gilory-Medium";
+  font-size: 2.6rem;
+  color: #000;
+}
+.header .nav__list {
+  display: flex;
+  margin-right: 2.4rem;
+  align-items: center;
+  gap: 2.4rem;
+  font-family: "Gilory-Medium";
+  font-weight: 600;
+  margin-left: 12.8rem;
+}
+.header .nav__list .nav__link {
+  color: #6d7485;
+  font-size: 1.6rem;
+  transition: all 0.3s ease-in-out;
+}
+.header .nav__list .nav__link:hover {
+  color: #000;
+}
+.header .header__button {
+  margin-left: auto;
+  padding: 1.2rem;
+}/*# sourceMappingURL=style.css.map */
