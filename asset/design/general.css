@@ -27,15 +27,15 @@
 .title--primary {
   margin: 2.4rem 0;
   font-size: 4.4rem;
-  font-family: var(--font-secondary);
-  color: var(--color-text-header);
+  font-family: "BC_Novatica";
+  color: rgb(7, 19, 48);
   letter-spacing: 0.15rem;
 }
 
 .title--secondary {
   font-size: 2rem;
-  font-family: var(--font-secondary);
-  color: var(--color-text-header);
+  font-family: "BC_Novatica";
+  color: rgb(7, 19, 48);
   letter-spacing: 0.15rem;
 }
 
@@ -65,14 +65,25 @@
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.7px;
-  border: none;
-  border-radius: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  border: none;
+  border-radius: 12px;
 }
 .button:hover {
   background-color: rgb(85.735, 106.675, 249.765);
   transform: scale(1.05);
+}
+
+/* ========================================
+ input
+======================================== */
+section,
+header,
+footer {
+  width: 180rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
 }
 
 /* ========================================

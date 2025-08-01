@@ -30,8 +30,8 @@ $space-m: 2.4rem;
 }
 
 @mixin title-style {
-  font-family: var(--font-secondary);
-  color: var(--color-text-header);
+  font-family: $font-secondary;
+  color: $color-text-header;
   letter-spacing: 0.15rem;
 }
 
@@ -40,6 +40,11 @@ $space-m: 2.4rem;
     background-color: lighten($color-primary-blue, 5%);
     transform: scale(1.05);
   }
+}
+
+@mixin border-style {
+  border: none;
+  border-radius: 12px;
 }
 
 /* ========================================
@@ -59,7 +64,7 @@ $space-m: 2.4rem;
 .title--primary {
   margin: $space-m 0;
   font-size: 4.4rem;
-  @include title-style();
+  @include title-style;
 }
 
 .title--secondary {
@@ -94,13 +99,22 @@ $space-m: 2.4rem;
   font-size: 1.4rem;
   font-weight: 600;
   letter-spacing: 0.7px;
-  border: none;
-  border-radius: 1.2rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   @include button-hover();
+  @include border-style();
 }
 
+/* ========================================
+ input
+======================================== */
+section,
+header,
+footer {
+  width: 180rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
+}
 /* ========================================
  flex box
 ======================================== */

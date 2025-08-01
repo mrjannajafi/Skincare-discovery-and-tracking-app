@@ -21,13 +21,12 @@
 .header {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 10.5rem;
   align-items: center;
-  width: 100%;
   background-color: rgb(252, 247, 244);
-  padding: 1.2rem 12.8rem;
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
   z-index: 1000;
-  gap: 3.2rem;
 }
 .header .header__logo {
   display: flex;
@@ -40,7 +39,7 @@
   margin-left: 0.6rem;
   font-family: "Gilory-Medium";
   font-size: 2.6rem;
-  color: #000;
+  color: rgb(0, 0, 0);
 }
 .header .nav__list {
   display: flex;
@@ -57,9 +56,59 @@
   transition: all 0.3s ease-in-out;
 }
 .header .nav__list .nav__link:hover {
-  color: #000;
+  color: rgb(0, 0, 0);
 }
 .header .header__button {
   margin-left: auto;
-  padding: 1.2rem;
+  padding: 1.2rem 2rem;
+}
+
+.hero {
+  margin-left: auto;
+  justify-content: center;
+  background-color: rgb(252, 247, 244);
+  border-bottom-left-radius: 12.8rem;
+}
+.hero .hero__content .hero__title {
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 5.2rem;
+}
+.hero .hero__content .hero__text {
+  line-height: 1.6;
+}
+.hero .hero__content .hero__form {
+  position: relative;
+}
+.hero .hero__content .hero__form .hero__input {
+  width: 50rem;
+  height: 8rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2), -5px -5px 10px rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  border: none;
+}
+.hero .hero__content .hero__form .hero__input:focus {
+  box-shadow: 0 0 0 2px rgb(61, 85, 249);
+}
+.hero .hero__content .hero__form .hero__input::-moz-placeholder {
+  font-family: "Gilory";
+  padding-left: 2.4rem;
+  font-size: 2rem;
+}
+.hero .hero__content .hero__form .hero__input::placeholder {
+  font-family: "Gilory";
+  padding-left: 2.4rem;
+  font-size: 2rem;
+}
+.hero .hero__content .hero__form .hero__button {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  padding: 2rem 3rem;
+  transform: translateY(-50%);
+}
+.hero .hero__image {
+  margin-top: 8rem;
 }/*# sourceMappingURL=style.css.map */

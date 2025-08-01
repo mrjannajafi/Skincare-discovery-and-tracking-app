@@ -1,6 +1,6 @@
 $color-bg-cream: rgb(252, 247, 244);
 $color-bg-white: rgb(255, 255, 255);
-$color-black: #000;
+$color-black: rgb(0, 0, 0);
 $color-primary-blue: rgb(61, 85, 249);
 $color-shadow-lavender: rgb(246, 241, 249);
 $color-bg-soft-blue: rgb(240, 246, 251);
@@ -12,6 +12,7 @@ $font-secondary: "BC_Novatica";
 $font-tertiary: "Gilory-Medium";
 $space-s: 1.6rem;
 $space-m: 2.4rem;
+$space-l: 4.8rem;
 
 @font-face {
   font-family: "Gilory";
@@ -32,7 +33,8 @@ $space-m: 2.4rem;
   &:hover {
     color: $color-black;
   }
-}
+} //for nav of header and footer
+
 /* ========================================
      font-size:
      10/12/14/16/18/20/24/30/36/44/52/62/74/86/98 
@@ -42,16 +44,16 @@ $space-m: 2.4rem;
     whitespace:
     2/4/8/12/16/24/32/48/64/80/96/128 
     ======================================== */
+
 .header {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 10.5rem;
   align-items: center;
-  width: 100%;
   background-color: $color-bg-cream;
-  padding: 1.2rem 12.8rem;
+  padding-top: $space-m;
+  padding-bottom: $space-m;
   z-index: 1000;
-  gap: 3.2rem;
 
   .header__logo {
     display: flex;
@@ -76,7 +78,7 @@ $space-m: 2.4rem;
     gap: $space-m;
     font-family: $font-tertiary;
     font-weight: 600;
-margin-left: 12.8rem;
+    margin-left: 12.8rem;
 
     .nav__link {
       color: $color-text-primary;
@@ -87,7 +89,55 @@ margin-left: 12.8rem;
   }
 
   .header__button {
-    margin-left: auto; 
-    padding: 1.2rem;
+    margin-left: auto;
+    padding: 1.2rem 2rem;
+  }
+}
+
+.hero {
+  margin-left: auto;
+  justify-content: center;
+  background-color: $color-bg-cream;
+  border-bottom-left-radius: 12.8rem;
+  .hero__content {
+    .hero__title {
+      line-height: 1.2;
+      font-weight: 500;
+      font-size: 5.2rem;
+    }
+    .hero__text {
+      line-height: 1.6;
+    }
+    .hero__form {
+      position: relative;
+      .hero__input {
+        width: 50rem;
+        height: 8rem;
+        background-color: $color-bg-white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+          -5px -5px 10px rgba(255, 255, 255, 0.8);
+        transition: all 0.3s ease;
+        border-radius: 25px;
+        border: none;
+        &:focus {
+          box-shadow: 0 0 0 2px $color-primary-blue;
+        }
+        &::placeholder {
+          font-family: $font-primary;
+          padding-left: $space-m;
+          font-size: 2rem;
+        }
+      }
+      .hero__button {
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        padding: 2rem 3rem;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .hero__image{
+    margin-top: 8rem;
   }
 }
