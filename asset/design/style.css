@@ -122,5 +122,20 @@
 }
 .social-biohacking .social-biohacking__figure .social-biohacking__image {
   border-radius: 50px;
-  box-shadow: 3px -3px 68px 4px rgba(219, 236, 250, 0.799), -3px 3px 68px 4px rgba(239, 224, 248, 0.806);
+  box-shadow: 0 7rem 90px 6px rgba(221, 237, 250, 0.5), 0 7rem 90px 6px rgba(239, 224, 248, 0.5);
+}
+
+.how-it-works {
+  width: 180rem;
+  padding-left: 35.5rem;
+  padding-right: 25rem;
+  margin-top: 15rem;
+  background-color: #f5f8fc;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12.8rem;
+}
+.how-it-works .how-it-works__title {
+  text-align: center;
+  font-size: 3.6rem;
 }/*# sourceMappingURL=style.css.map */

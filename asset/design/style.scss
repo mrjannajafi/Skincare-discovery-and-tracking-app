@@ -1,9 +1,10 @@
 $color-bg-cream: rgb(252, 247, 244);
 $color-bg-white: rgb(255, 255, 255);
+$color-bg-gray:#f5f8fc;
 $color-black: rgb(0, 0, 0);
 $color-primary-blue: rgb(61, 85, 249);
-$color-shadow-lavender: rgba(239, 224, 248, 0.806);
-$color-bg-soft-blue: rgba(219, 236, 250, 0.799);
+$color-shadow-lavender: rgba(239, 224, 248, 0.5);
+$color-bg-soft-blue: rgba(221, 237, 250, 0.5);
 $color-text-peach: rgb(240, 188, 163);
 $color-text-header: rgb(7, 19, 48);
 $color-text-primary: #6d7485;
@@ -57,6 +58,8 @@ $margin-section: 15rem;
     2/4/8/12/16/24/32/48/64/80/96/128 
     ======================================== */
 
+// <!-- ========== Header ========== -->
+
 .header {
   @include width-hero-header();
   position: fixed;
@@ -106,6 +109,7 @@ $margin-section: 15rem;
     padding: 1.2rem 2rem;
   }
 }
+// <!-- ========== Hero Section ========== -->
 
 .hero {
   @include width-hero-header();
@@ -146,14 +150,30 @@ $margin-section: 15rem;
   }
 }
 
+// <!-- ========== Social Biohacking Section ========== -->
+
 .social-biohacking {
   @include width-section();
   .social-biohacking__figure {
     background: none;
     .social-biohacking__image {
       border-radius: 50px;
-      box-shadow: 3px -3px 68px 4px $color-bg-soft-blue,
-        -3px 3px 68px 4px $color-shadow-lavender;
+      box-shadow: 0 7rem 90px 6px $color-bg-soft-blue,
+        0 7rem 90px 6px $color-shadow-lavender;
     }
+  }
+}
+
+// <!-- ========== How It Works Section ========== -->
+
+.how-it-works {
+  @include width-section();
+  background-color: $color-bg-gray;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12.8rem;
+  .how-it-works__title{
+    text-align: center;
+    font-size: 3.6rem;
   }
 }
