@@ -2,8 +2,8 @@ $color-bg-cream: rgb(252, 247, 244);
 $color-bg-white: rgb(255, 255, 255);
 $color-black: rgb(0, 0, 0);
 $color-primary-blue: rgb(61, 85, 249);
-$color-shadow-lavender: rgb(246, 241, 249);
-$color-bg-soft-blue: rgb(240, 246, 251);
+$color-shadow-lavender: rgba(239, 224, 248, 0.806);
+$color-bg-soft-blue: rgba(219, 236, 250, 0.799);
 $color-text-peach: rgb(240, 188, 163);
 $color-text-header: rgb(7, 19, 48);
 $color-text-primary: #6d7485;
@@ -13,7 +13,7 @@ $font-tertiary: "Gilory-Medium";
 $space-s: 1.6rem;
 $space-m: 2.4rem;
 $space-l: 4.8rem;
-
+$margin-section: 15rem;
 @font-face {
   font-family: "Gilory";
   src: url(../fonts/Gilroy-Regular.ttf);
@@ -35,6 +35,18 @@ $space-l: 4.8rem;
   }
 } //for nav of header and footer
 
+@mixin width-hero-header {
+  width: 180rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
+}
+@mixin width-section {
+  width: 180rem;
+  padding-left: 35.5rem;
+  padding-right: 25rem;
+  margin-top: $margin-section;
+}
+
 /* ========================================
      font-size:
      10/12/14/16/18/20/24/30/36/44/52/62/74/86/98 
@@ -46,6 +58,7 @@ $space-l: 4.8rem;
     ======================================== */
 
 .header {
+  @include width-hero-header();
   position: fixed;
   top: 0;
   left: 10.5rem;
@@ -95,49 +108,52 @@ $space-l: 4.8rem;
 }
 
 .hero {
+  @include width-hero-header();
   margin-left: auto;
   justify-content: center;
   background-color: $color-bg-cream;
   border-bottom-left-radius: 12.8rem;
-  .hero__content {
-    .hero__title {
-      line-height: 1.2;
-      font-weight: 500;
-      font-size: 5.2rem;
-    }
-    .hero__text {
-      line-height: 1.6;
-    }
-    .hero__form {
-      position: relative;
-      .hero__input {
-        width: 50rem;
-        height: 8rem;
-        background-color: $color-bg-white;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
-          -5px -5px 10px rgba(255, 255, 255, 0.8);
-        transition: all 0.3s ease;
-        border-radius: 25px;
-        border: none;
-        &:focus {
-          box-shadow: 0 0 0 2px $color-primary-blue;
-        }
-        &::placeholder {
-          font-family: $font-primary;
-          padding-left: $space-m;
-          font-size: 2rem;
-        }
+  .hero__form {
+    position: relative;
+    .hero__input {
+      width: 50rem;
+      height: 8rem;
+      background-color: $color-bg-white;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+        -5px -5px 10px rgba(255, 255, 255, 0.8);
+      transition: all 0.3s ease;
+      border-radius: 25px;
+      border: none;
+      &:focus {
+        box-shadow: 0 0 0 2px $color-primary-blue;
       }
-      .hero__button {
-        position: absolute;
-        top: 50%;
-        right: 2rem;
-        padding: 2rem 3rem;
-        transform: translateY(-50%);
+      &::placeholder {
+        font-family: $font-primary;
+        padding-left: $space-m;
+        font-size: 2rem;
       }
+    }
+    .hero__button {
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      padding: 2rem 3rem;
+      transform: translateY(-50%);
     }
   }
-  .hero__image{
+  .hero__image {
     margin-top: 8rem;
+  }
+}
+
+.social-biohacking {
+  @include width-section();
+  .social-biohacking__figure {
+    background: none;
+    .social-biohacking__image {
+      border-radius: 50px;
+      box-shadow: 3px -3px 68px 4px $color-bg-soft-blue,
+        -3px 3px 68px 4px $color-shadow-lavender;
+    }
   }
 }

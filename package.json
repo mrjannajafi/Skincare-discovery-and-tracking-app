@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrjannajafi/Skincare-discovery-and-tracking-app.git"
+  },
+  "author": "Najafi Marjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrjannajafi/Skincare-discovery-and-tracking-app/issues"
+  },
+  "homepage": "https://github.com/mrjannajafi/Skincare-discovery-and-tracking-app#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

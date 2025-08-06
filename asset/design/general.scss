@@ -63,7 +63,9 @@ $space-m: 2.4rem;
 
 .title--primary {
   margin: $space-m 0;
-  font-size: 4.4rem;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 5.2rem;
   @include title-style;
 }
 
@@ -77,6 +79,7 @@ $space-m: 2.4rem;
   font-family: $font-primary;
   color: $color-text-primary;
   font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 .text--blue {
@@ -105,16 +108,6 @@ $space-m: 2.4rem;
   @include border-style();
 }
 
-/* ========================================
- input
-======================================== */
-section,
-header,
-footer {
-  width: 180rem;
-  padding-left: 25rem;
-  padding-right: 25rem;
-}
 /* ========================================
  flex box
 ======================================== */

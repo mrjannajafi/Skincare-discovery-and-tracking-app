@@ -19,6 +19,9 @@
     2/4/8/12/16/24/32/48/64/80/96/128 
     ======================================== */
 .header {
+  width: 180rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
   position: fixed;
   top: 0;
   left: 10.5rem;
@@ -64,23 +67,18 @@
 }
 
 .hero {
+  width: 180rem;
+  padding-left: 25rem;
+  padding-right: 25rem;
   margin-left: auto;
   justify-content: center;
   background-color: rgb(252, 247, 244);
   border-bottom-left-radius: 12.8rem;
 }
-.hero .hero__content .hero__title {
-  line-height: 1.2;
-  font-weight: 500;
-  font-size: 5.2rem;
-}
-.hero .hero__content .hero__text {
-  line-height: 1.6;
-}
-.hero .hero__content .hero__form {
+.hero .hero__form {
   position: relative;
 }
-.hero .hero__content .hero__form .hero__input {
+.hero .hero__form .hero__input {
   width: 50rem;
   height: 8rem;
   background-color: rgb(255, 255, 255);
@@ -89,20 +87,20 @@
   border-radius: 25px;
   border: none;
 }
-.hero .hero__content .hero__form .hero__input:focus {
+.hero .hero__form .hero__input:focus {
   box-shadow: 0 0 0 2px rgb(61, 85, 249);
 }
-.hero .hero__content .hero__form .hero__input::-moz-placeholder {
+.hero .hero__form .hero__input::-moz-placeholder {
   font-family: "Gilory";
   padding-left: 2.4rem;
   font-size: 2rem;
 }
-.hero .hero__content .hero__form .hero__input::placeholder {
+.hero .hero__form .hero__input::placeholder {
   font-family: "Gilory";
   padding-left: 2.4rem;
   font-size: 2rem;
 }
-.hero .hero__content .hero__form .hero__button {
+.hero .hero__form .hero__button {
   position: absolute;
   top: 50%;
   right: 2rem;
@@ -111,4 +109,18 @@
 }
 .hero .hero__image {
   margin-top: 8rem;
+}
+
+.social-biohacking {
+  width: 180rem;
+  padding-left: 35.5rem;
+  padding-right: 25rem;
+  margin-top: 15rem;
+}
+.social-biohacking .social-biohacking__figure {
+  background: none;
+}
+.social-biohacking .social-biohacking__figure .social-biohacking__image {
+  border-radius: 50px;
+  box-shadow: 3px -3px 68px 4px rgba(219, 236, 250, 0.799), -3px 3px 68px 4px rgba(239, 224, 248, 0.806);
 }/*# sourceMappingURL=style.css.map */

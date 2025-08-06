@@ -26,7 +26,9 @@
 ======================================== */
 .title--primary {
   margin: 2.4rem 0;
-  font-size: 4.4rem;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 5.2rem;
   font-family: "BC_Novatica";
   color: rgb(7, 19, 48);
   letter-spacing: 0.15rem;
@@ -44,6 +46,7 @@
   font-family: "Gilory";
   color: #6d7485;
   font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 .text--blue {
@@ -73,17 +76,6 @@
 .button:hover {
   background-color: rgb(85.735, 106.675, 249.765);
   transform: scale(1.05);
-}
-
-/* ========================================
- input
-======================================== */
-section,
-header,
-footer {
-  width: 180rem;
-  padding-left: 25rem;
-  padding-right: 25rem;
 }
 
 /* ========================================
