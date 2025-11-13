@@ -1,6 +1,6 @@
 $color-bg-cream: rgb(252, 247, 244);
 $color-bg-white: rgb(255, 255, 255);
-$color-bg-gray:#f5f8fc;
+$color-bg-gray: #f5f8fc;
 $color-black: rgb(0, 0, 0);
 $color-primary-blue: rgb(61, 85, 249);
 $color-shadow-lavender: rgba(239, 224, 248, 0.5);
@@ -171,9 +171,54 @@ $margin-section: 15rem;
   background-color: $color-bg-gray;
   margin-left: auto;
   margin-right: auto;
+  padding: 3rem 0;
   border-radius: 12.8rem;
-  .how-it-works__title{
+  .how-it-works__title {
     text-align: center;
-    font-size: 3.6rem;
+    font-size: 4rem;
+    width: 77rem;
+    margin: 12.8rem auto 8rem auto;
+  }
+  .how-it-works__step {
+    width: 65%;
+    margin: 2rem auto;
+    justify-content: center;
+    .how-it-works__step--number {
+      background-color: $color-primary-blue;
+      color: $color-bg-white;
+      display: inline-block;
+      width: 5.2rem;
+      height: 5.2rem;
+      padding: 1.5rem;
+      margin: 4rem auto;
+      border-radius: 50%;
+      font-size: 2rem;
+      font-weight: 700;
+      font-family: $font-primary;
+      text-align: center;
+    }
+    .text {
+      width: 50%;
+    }
+    .image {
+      width: 45rem;
+    }
+  }
+}
+
+// <!-- ========== Benefits Section ========== -->
+
+.benefit {
+  @include width-section();
+  .benefits__header {
+    .benefits__title {
+      width: 75%;
+      margin: 4rem auto;
+      text-align: center;
+      color: $color-text-peach;
+      font-family: $font-primary;
+      font-size: 4.8rem;
+      line-height: 1.8;
+    }
   }
 }

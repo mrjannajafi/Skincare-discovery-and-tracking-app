@@ -133,9 +133,52 @@
   background-color: #f5f8fc;
   margin-left: auto;
   margin-right: auto;
+  padding: 3rem 0;
   border-radius: 12.8rem;
 }
 .how-it-works .how-it-works__title {
   text-align: center;
-  font-size: 3.6rem;
+  font-size: 4rem;
+  width: 77rem;
+  margin: 12.8rem auto 8rem auto;
+}
+.how-it-works .how-it-works__step {
+  width: 65%;
+  margin: 2rem auto;
+  justify-content: center;
+}
+.how-it-works .how-it-works__step .how-it-works__step--number {
+  background-color: rgb(61, 85, 249);
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 5.2rem;
+  height: 5.2rem;
+  padding: 1.5rem;
+  margin: 4rem auto;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Gilory";
+  text-align: center;
+}
+.how-it-works .how-it-works__step .text {
+  width: 50%;
+}
+.how-it-works .how-it-works__step .image {
+  width: 45rem;
+}
+
+.benefit {
+  width: 180rem;
+  padding-left: 35.5rem;
+  padding-right: 25rem;
+  margin-top: 15rem;
+}
+.benefit .benefits__header .benefits__title {
+  width: 50%;
+  margin: 4rem auto;
+  text-align: center;
+  color: rgb(240, 188, 163);
+  font-family: "Gilory";
+  font-size: 4.8rem;
 }/*# sourceMappingURL=style.css.map */
