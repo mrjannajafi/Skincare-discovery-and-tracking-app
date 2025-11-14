@@ -175,10 +175,47 @@
   margin-top: 15rem;
 }
 .benefit .benefits__header .benefits__title {
-  width: 50%;
+  width: 70%;
   margin: 4rem auto;
   text-align: center;
-  color: rgb(240, 188, 163);
   font-family: "Gilory";
   font-size: 4.8rem;
+  line-height: 1.4;
+  color: rgb(240, 188, 163);
+}
+.benefit .benefits__header figure {
+  position: relative;
+  justify-content: center;
+}
+.benefit .benefits__header figure .benefits__image {
+  width: 4.5rem;
+}
+.benefit .benefits__header figure .benefits__logo {
+  position: absolute;
+  width: 2rem;
+  top: 4.25rem;
+  right: 62%;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 2;
+}
+.benefit .benefits__header figure figcaption {
+  margin-left: 3rem;
+}
+.benefit .benefits__content .benefits__item {
+  width: 100%;
+  justify-content: space-between;
+  margin: 20rem auto;
+}
+.benefit .benefits__content .benefits__item .benefit__context {
+  width: 50%;
+}
+.benefit .benefits__content .benefits__item .benefit__context h2 {
+  margin-bottom: 4.8rem;
+}
+.benefit .benefits__content .benefits__item .benefit__context p {
+  width: 77%;
+}
+.benefit .benefits__content .benefits__item .benefit__image--step-1 {
+  box-shadow: 1px 1px 1px 1px rgba(239, 224, 248, 0.5);
 }/*# sourceMappingURL=style.css.map */
